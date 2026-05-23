@@ -1,2 +1,40 @@
-# lab-event-automation
-Google Apps Script tool for automating research lab event management.
+# Lab Event Automation Tool
+
+研究室内イベントの幹事業務を効率化するために作成した
+Google Apps Script(GAS)ツールです。
+
+## 作成背景
+
+研究室の飲み会や送別会では、
+
+- Googleフォーム作成
+- 回答管理
+- URL整理
+- 管理資料作成
+
+などを毎回手作業で行っており、
+準備に時間がかかっていました。
+
+そこで、これらを自動化するために
+GASを用いたツールを作成しました。
+
+## 主な機能
+
+- Googleフォーム自動生成
+- 回答用スプレッドシート生成
+- 管理用ドキュメント生成
+- Google Drive上での自動整理
+
+## 使用技術
+
+- Google Apps Script
+- JavaScript
+- Google Forms API
+- Google Drive API
+
+## 今後改善したい点
+
+- 未回答者への自動リマインド
+- UI改善
+- 設定値の外部化
+- 複数イベント対応
