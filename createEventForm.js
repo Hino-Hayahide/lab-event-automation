@@ -1,6 +1,6 @@
 function createCelebrationEventForm(){
-  const guestname = 'お祝いする方の名前'
-  const date = '開催予定日(〇月〇日、数字は半角)'
+  const guestname = 'お祝いする方の名前';
+  const date = '開催予定日(〇月〇日、数字は半角)';
   //1：フォームを作成し、編集するためにそのフォームにアクセスするための情報（リモコン）を戻り値として吐き出す。そのリモコンを関数formに代入する。
   const formName = guestname +'さんの祝賀会について'
   const form = FormApp.create(formName);
@@ -50,7 +50,7 @@ function createCelebrationEventForm(){
   form.setDestination(FormApp.DestinationType,ssId);
   const ssFile = DriveApp.getFileById(ssId);
   ssFile.moveTo(folder);
-  console.log('スプレッドシートをフォルダー[gasのテスト用フォルダ]に移動しました。')
+  console.log('スプレッドシートをフォルダー[gasのテスト用フォルダ]に移動しました。');
   //あとは、フォームのID、編集用URL、回答用URL、スプレッドシートのID、スプレッドシートのURLを一つのドキュメントに書き込んで出力する方法を見ていく。
   const doc = DocumentApp.create(formName + '管理資料');
   const body = doc.getBody();
